@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+ RewriteEngine On
+ # RewriteCond %{HTTPS} off
+ # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+ ServerAdmin dave@upgradeya.com
+ ServerName drupal-vagrant.local
+
+ DocumentRoot /vagrant/drupal
+ ErrorLog /vagrant/log/error.log
+ CustomLog /vagrant/log/access.log combined
+</VirtualHost>
