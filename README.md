@@ -9,3 +9,4 @@ Requirements
 ------------
 
 - NFS server available on your host machine.  This allows Drupal to load faster because Drupal can use many files which is slow without NFS.
+- You must change your `/etc/hosts` file to match the virtual server set in Apache.  By default this is `10.1.1.100	drupal-vagrant.local`.  The IP can be changed in the `Vagrantfile` file and the hostname can be changed in the `files/drupal` file.
